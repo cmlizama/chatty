@@ -1,0 +1,23 @@
+<head>
+  <title>chatty</title>
+</head>
+
+<body>
+	<h2 class="navbar-header"> Chatty: powered by Meteor.js</h2>
+	{{> messages}}
+	{{> entry}}
+</body>
+
+<template name="entry">
+	<p><input type='text' id='name' placeholder='Your Name'><input type='text' id='messageBox' placeholder='Your Message'></p>
+</template>
+
+<template name='messages'>
+	{{#each messages}}
+	  {{> message}}
+	{{/each}}
+</template>
+
+<template name='message'>
+	<p><strong>{{name}}:</strong> {{message}}</p>
+</template>

@@ -1,0 +1,15 @@
+/* CSS declarations go here */
+
+body {
+	font-family: Helvetica;
+	font-size: 14px;
+	display: inline;
+}
+
+input#messageBox {
+	width: 400px;
+}
+
+h2 {
+	background: #f00;
+}
