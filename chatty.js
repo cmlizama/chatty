@@ -49,6 +49,12 @@ if (Meteor.isClient) {
     Template.messages.messages = function () {
       return Messages.find({}, { sort: {time: -1} });
     };
-  
+ 
+
+  var removeDB = function (x) {
+      return Messages.remove()
+  }
+
+ //end of client side code below 
 }
 

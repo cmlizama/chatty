@@ -4,12 +4,35 @@ body {
 	font-family: Helvetica;
 	font-size: 14px;
 	display: inline;
-}
-
-input#messageBox {
-	width: 400px;
+	background-color: #a6ff9b;
 }
 
 h2 {
-	background: #f00;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+/* experiments*/
+
+.room {
+	text-align: left;
+	padding-left: 40px;
+	background-color: white;
+	max-width: 66%;
+}
+
+body {
+  padding: 10px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.message-input {
+	font-size:1.5em;
+	padding:5px;
+	margin-bottom:10px;
+	max-width: 40%;
 }

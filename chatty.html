@@ -4,8 +4,14 @@
 
 <body>
 	<h2 class="navbar-header"> Chatty: powered by Meteor.js</h2>
-	{{> messages}}
+	<div class='room'>
+		{{> messages}}
+	</div>
+	
+	<div class='message-input'>
 	{{> entry}}
+	</div>
+
 </body>
 
 <!-- input fields for chat message -->
@@ -18,13 +24,13 @@
 
 
 <!-- The message results destination -->
-<template name='messages'>
+<template name='messages' class='room'>
 	{{#each messages}}
 	  {{> message}}
 	{{/each}}
 </template>
 
 <!-- how the message will be displayed -->
-<template name='message'>
+<template name='message' class='message-input'>
 	<p><strong>{{name}}:</strong> {{message}}</p>
 </template>
