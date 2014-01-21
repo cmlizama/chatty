@@ -4,6 +4,7 @@
 
 <body>
 	<h2 class="navbar-header"> Chatty: powered by Meteor.js</h2>
+	
 	<div class='room'>
 		{{> messages}}
 	</div>
@@ -23,14 +24,14 @@
 </template>
 
 
-<!-- The message results destination -->
+<!-- The message results destination. Remember that our collection is called 'messages' -->
 <template name='messages' class='room'>
 	{{#each messages}}
-	  {{> message}}
+	  {{> message_item}}
 	{{/each}}
 </template>
 
 <!-- how the message will be displayed -->
-<template name='message' class='message-input'>
-	<p><strong>{{name}}:</strong> {{message}}</p>
+<template name='message_item' class='message-input'>
+	<p><strong>{{name}}:</strong> {{message_item}}</p>
 </template>
