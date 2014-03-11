@@ -31,6 +31,7 @@ if (Meteor.isClient) {
     };
   };
 
+
   Template.entry.events = {};
 
   Template.entry.events[okcancel_events('#messageBox')] = make_okcancel_handler({

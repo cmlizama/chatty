@@ -3,35 +3,15 @@
 </head>
 
 <body>
-	<h2 class="navbar-header"> Chatty: powered by Meteor.js</h2>
+
+	<h2 class="navbar-header"> c:m.js</h2>
+		<div class='room'>
+			{{> messages}}
+		</div>
 	
-	<div class='room'>
-		{{> messages}}
-	</div>
-	
-	<div class='message-input'>
-	{{> entry}}
-	</div>
+		<div class='message-input'>
+			{{> entry}}
+		</div>
 
 </body>
 
-<!-- input fields for chat message -->
-<template name="entry">
-	<p>
-		<input type='text' id='name' placeholder='Your Name'>
-		<input type='text' id='messageBox' placeholder='Your Message'>
-	</p>
-</template>
-
-
-<!-- The message results destination. Remember that our collection is called 'messages' -->
-<template name='messages' class='room'>
-	{{#each messages}}
-	  {{> message_item}}
-	{{/each}}
-</template>
-
-<!-- how the message will be displayed -->
-<template name='message_item' class='message-input'>
-	<p><strong>{{name}}:</strong> {{message_item}}</p>
-</template>

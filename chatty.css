@@ -7,11 +7,20 @@ body {
 	background-color: #a6ff9b;
 }
 
-h2 {
+.navbar {
+	display: inline-block;
+}
+
+.navbar-header {
 	background: black;
 	color: white;
 	text-align: center;
 	font-size: 40px;
+	min-height: 50px;
+}
+
+loginButton {
+	float: right;
 }
 
 /* experiments*/
@@ -21,6 +30,7 @@ h2 {
 	padding-left: 40px;
 	background-color: white;
 	max-width: 66%;
+	min-height: 150px;
 }
 
 body {

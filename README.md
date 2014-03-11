@@ -9,3 +9,8 @@ to add:
 	- allow users to make their own chat room, invite others
 	- different colors for different users' messages to add readability
 	- timestamps
+
+try using the meteorite "streams" package
+	'mrt add streams'
+	this lets you use the sendChat() method and doesn't require saving/subscribing to MongoDB
+
